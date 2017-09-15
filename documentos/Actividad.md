@@ -1,4 +1,6 @@
-## Actividad 1: El objetivo es que el estudiante conozca la metodología, comprenda las funciones de la herramienta y las aplicar instrucciones básicas iniciales.
+![banner](images/header.png)
+
+## Actividad 1: El objetivo es crear una cuenta y utilizar instrucciones básicas iniciales.
 
 ### 1.1.Crear cuenta GIT
 lorem-upso... 
@@ -12,7 +14,7 @@ lorem-upso...
 ### 1.4.Publicar cambios
 lorem-upso... 
 
-## Actividad 2: El objetivo es que el estudiante comprenda la metodología y el funcionamiento inicial de esta herramienta.
+## Actividad 2: El objetivo es comprender la metodología y el funcionamiento inicial de esta herramienta.
 
 ### 2.1.Clonar proyecto predefinido
 lorem-upso... 
@@ -23,7 +25,7 @@ lorem-upso...
 ### 2.3.Publicar cambios
 lorem-upso... 
 
-## Actividad 3: El objetivo es que el estudiante comprenda y aplique el concepto de ramas que le permitirán trabajar colaborativamente con sus pares.
+## Actividad 3: El objetivo es comprender y aplicar el concepto de ramas que le permitirán trabajar colaborativamente con sus pares.
 
 ### 3.1.Crear una rama del proyecto predefinido
 lorem-upso... 
