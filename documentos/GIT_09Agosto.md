@@ -55,7 +55,7 @@ A diferencia de SCV (Sistema de Control de Versiones) tradicionales que son cone
  	* This means that instead of doing a "checkout" of the current tip of the source code, you do a "clone" of the entire repository. 
  	* Because of Git's distributed nature and superb branching system, an almost endless number of workflows can be implemented with relative ease. 
  * **Data Assurance**:
- 	* The data model that Git uses ensures the **cryptographic integrity** of every bit of your project. Every file and commit is checksummed and retrieved by its **checksum** when checked back out. It's impossible to get anything out of Git other than the exact bits you put in.
+ 	* The data model that Git uses ensures the **cryptographic integrity** of every bit of your project. Every file and commit is **checksummed** and retrieved by its **checksum** when checked back out. It's impossible to get anything out of Git other than the exact bits you put in.
  * Staging Area:
  	* Unlike the other systems, Git has something called the **"staging area" or "index"**. This is an intermediate area where commits can be formatted and reviewed before completing the commit. 
  	  ![alt text](images/staging_area.png) 
