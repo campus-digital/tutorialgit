@@ -1,3 +1,3 @@
-# Operaciones matematicas basicas en Python
+# Operaciones matemáticas básicas en Python
 
-### En este proyecto se creara un programa en python para resolver operaciones basicas de matematicas, con la finalidad de comprender el funcionamiento de GIT.
+### En este proyecto se creará un programa en python para resolver operaciones básicas de matemáticas, con la finalidad de comprender el funcionamiento de GIT.
