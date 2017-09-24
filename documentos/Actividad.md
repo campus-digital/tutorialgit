@@ -170,17 +170,25 @@
 * Ya conoces los comandos básicos de git para trabajar localmente, sin embargo, para interactuar con un repositorio remoto es necesario conocer algunos mas.
 * Para subir tus cambios locales a un repositorio utiliza el comando:
 
+        git push origin master
+
+> Recuerda que debe subir cambios a la misma rama en la que te encuentras y haz realizado modificaciones. En nuestro caso, solo tenemos la rama master.
+
+* Como dato extra, a modo generico el comando es asi:
+
         git push origin <branch>
 
-> Recuerda que debe subir cambios a la misma rama en la que te encuentras y haz realizado modificaciones.
-
 * Ahora cualquier persona puede bajar esos cambios que realizaste en esa rama.
-* Tambien puedes verificar los cambios en la web, en tu repositorio de github.
+* Tambien puedes verificar los cambios en la web, en tu repositorio de github, revisalo online.
 
 ### 2.5.Bajar cambios de un repositorio remoto
 
 * Para bajar cambios desde un repositorio utiliza el comando:
 
-        git pull origin <branch>
+        git pull origin master
 
 > Recuerda que debe bajar cambios a la misma rama para evitar conflictos.
+
+* A modo generico el comando es asi:
+
+        git pull origin <branch>
