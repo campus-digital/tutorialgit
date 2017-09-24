@@ -7,7 +7,10 @@
 * Ingresa a la pagina de github ([https://github.com](https://github.com/)).
 * Ingresa tus datos en el formulario de la web para registrarte, este se muestra en la siguiente imagen:
 
-!["registro"](images/registro.png)
+<center>
+<img width="300" alt="register" src="images/registro.png">
+</center>
+![registro](images/registro.png)
 
 * Envía los datos del formulario que completaste.
 * Te llegara un email a tu cuenta de correo para confirmar el registro, confírmalo!!
@@ -19,7 +22,7 @@
 
 !["login"](images/login_github.png)
 
-* Luego de ingresar a tu cuenta, inmediatamente github te da la opción de crear repositorios, tal como lo indica la imagen: 
+* Luego de ingresar a tu cuenta, inmediatamente github te da la opción de crear repositorios, tal como lo indica la imagen:
 
 !["iniciar proyecto"](images/start_project.png)
 
@@ -119,7 +122,7 @@
 * Posteriorrmente agregamos nuestro programa al área de preparación con el siguiente comando:
 
         git add programa.py
-        
+
 > Cuando trabajes con mas archivos probablemente agregar archivos uno por uno al area de preparación sea tedioso, sin embargo, se puede utilizar `git add -A` el cual agrega todos los archivos.
 
 * Podemos verificar nuestros cambios en el repositorio nuevamente con `git status`:
