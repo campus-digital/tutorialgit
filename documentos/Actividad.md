@@ -7,9 +7,6 @@
 * Ingresa a la pagina de github ([https://github.com](https://github.com/)).
 * Ingresa tus datos en el formulario de la web para registrarte, este se muestra en la siguiente imagen:
 
-<center>
-<img width="300" alt="register" src="images/registro.png">
-</center>
 ![registro](images/registro.png)
 
 * Envía los datos del formulario que completaste.
@@ -26,7 +23,7 @@
 
 !["iniciar proyecto"](images/start_project.png)
 
-* A continuación da click en el boton iniciar projecto, con lo cual, podras completar los datos de tu repositorio. La imagen a continuación te muestra como sera:
+* A continuación da click en el botón iniciar proyecto, con lo cual, podrás completar los datos de tu repositorio. La imagen a continuación te muestra como sera:
 
 !["nuevo repo"](images/nuevo_repo.png)
 
@@ -34,12 +31,12 @@
 
 !["nuevo repo"](images/crear_repo_mitest.png)
 
-* Por ultimo le damos click al boton crear y listo.
+* Por ultimo le damos click al botón crear y listo.
 
 ### 1.3.Clonar repositorio en equipo local.
 
 * Ya que creaste el repositorio, lo siguiente es clonarlo en tu equipo local.
-* Para hacer esto copiamos la dirección o url de nuestro repositorio en github, esta dirección la obtienes inmediatamente despues de crear el repositorio, tal como lo indica la imagen siguiente:
+* Para hacer esto copiamos la dirección o URL de nuestro repositorio en github, esta dirección la obtienes inmediatamente después de crear el repositorio, tal como lo indica la imagen siguiente:
 
 !["creada"](images/datos_repo.png)
 
@@ -123,7 +120,7 @@
 
         git add programa.py
 
-> Cuando trabajes con mas archivos probablemente agregar archivos uno por uno al area de preparación sea tedioso, sin embargo, se puede utilizar `git add -A` el cual agrega todos los archivos.
+> Cuando trabajes con mas archivos probablemente agregar archivos uno por uno al área de preparación sea tedioso, sin embargo, se puede utilizar `git add -A` el cual agrega todos los archivos.
 
 * Podemos verificar nuestros cambios en el repositorio nuevamente con `git status`:
 
@@ -156,7 +153,7 @@
   - La fecha y hora de la creación.
   - El comentario del commit, el cual se recomienda que sea conciso.
 * Ahora, realiza tu otros cambios al programa y repite el proceso (la idea es que realices varios commit, al menos 3, para ello escribe otras lineas o comentarios).
-* Si verificamos los commits del repositorio nuevamente, deberiamos tener mas de uno, algo similar a lo siguiente:
+* Si verificamos los commits del repositorio nuevamente, deberíamos tener mas de uno, algo similar a lo siguiente:
 
 ![lista log](images/git_lista_log.png)
 
@@ -177,12 +174,12 @@
 
 > Recuerda que debe subir cambios a la misma rama en la que te encuentras y haz realizado modificaciones. En nuestro caso, solo tenemos la rama master.
 
-* Como dato extra, a modo generico el comando es asi:
+* Como dato extra, a modo genérico el comando es así:
 
         git push origin <branch>
 
 * Ahora cualquier persona puede bajar esos cambios que realizaste en esa rama.
-* Tambien puedes verificar los cambios en la web, en tu repositorio de github, revisalo online.
+* También puedes verificar los cambios en la web, en tu repositorio de github, revísalo online.
 
 ### 2.5.Bajar cambios de un repositorio remoto
 
@@ -192,6 +189,6 @@
 
 > Recuerda que debe bajar cambios a la misma rama para evitar conflictos.
 
-* A modo generico el comando es asi:
+* A modo genérico el comando es así:
 
         git pull origin <branch>
