@@ -2,7 +2,36 @@
 
 ## Actividad 1: El objetivo es utilizar comandos mas avanzados de git que sirven para el trabajo colaborativo.
 
-### 1.1.Muevete entre commits
+### 1.1.Clonar repositorio en equipo local.
+
+* Clonamos un repositorio creado con anterioridad.
+* Para hacer esto copiamos la dirección o URL del repositorio desde github, esta dirección la obtienes cuando buscar un repositorio.
+
+![search](images/search_github.png)
+
+* Una vez encontrado el repositorio por este u otro medio, lo clonamos. Para ello, copiamos la URL del repositorio (boton verde).
+
+![home](images/repositorio_github.png)
+
+* Nos saldra la URL a copiar, la cual copiamos:
+
+![URL](images/clonar.png)
+
+* A continuación abrimos la terminal o consola de comandos (ctrl+t).
+
+!["consola"](images/terminal.png)
+
+* En nuestro directorio personal clonamos nuestro repositorio con el comando `git clone`, como lo indica la imagen siguiente:
+
+        git clone https://github.com/campus-digital/mitest.git
+
+> La URL o dirección que sale en esta imagen es un ejemplo, esta será diferente segun el repositorio que quieras clonar. Por ende, no te preocupes si la URL que clonas no es la misma.
+
+* Al terminar el proceso ya tenemos el repositorio clonado en nuestro equipo, este lo puedes verificar en la carpeta donde lo clonaste, ya que la clonación te crea una carpeta.
+
+* Si ingresas a la carpeta y ejecutas `git status`, te deberia entregar la información correspondiente. Desde el momento en que te reconoce el comando, te indica que es un repositorio git.
+
+### 1.2.Muevete entre commits
 
 * Comencemos por abrir la terminal (ctrl+t) e ingresar a nuestro repositorio.
 
@@ -33,7 +62,7 @@
 
 > Es importante mencionar que al referirte a la rama, siempre te mueves al último commit en ella.
 
-### 1.2.Crea otras ramas
+### 1.3.Crea otras ramas
 
 * Para ver las ramas que tienes y en la que te encuentras actualmente, utiliza el comando:
 
@@ -55,7 +84,7 @@
 
 ![ramas](images/ramas.png)
 
-### 1.3.Muévete entre ramas
+### 1.4.Muévete entre ramas
 
 * Las ramas nos permiten movernos entre dimensiones diferentes, cada rama es independiente de la otra hasta que se fusionan.
 * Para movernos entre ramas, utilizamos el mismo comando que el para movernos entre commits, con la diferencia que utilizamos el nombre de la rama y no el id de commit, como se muestra a continuación:
@@ -84,7 +113,7 @@
 
 * Como te diste cuenta puedes tomar caminos diferentes segun la rama en la que te encuentres. Puedes trabajar en paraleo sin que los cambios de una rama afecten a otra.
 
-### 1.4.Fusiona las ramas.
+### 1.5.Fusiona las ramas.
 
 * Con las ramas, no tan solo puedes crear caminos diferentes, sino que tambien puedes unir caminos.
 * Para unir ramas o mover los commits desde una rama hacia otra tienes que fusionar las ramas.
