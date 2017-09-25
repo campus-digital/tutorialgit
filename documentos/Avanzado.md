@@ -23,15 +23,15 @@
 
 ![checkout commit](images/checkout_commit.png)
 
-* Finalmente vuelve a tu ultimo commit, lo puedes realizar con:
+* Finalmente vuelve a tu último commit, lo puedes realizar con:
 
         git checkout master
 
-* En el caso anterior utilizamos el nombre de la rama, por otro lado, si es que conoces el id (sha-1) de tu ultimo commit, también lo puedes realizar con:
+* En el caso anterior utilizamos el nombre de la rama, por otro lado, si es que conoces el id (sha-1) de tu último commit, también lo puedes realizar con:
 
         git checkout <idcommit>
 
-> Es importante mencionar que al referirte a la rama, siempre te mueves al ultimo commit en ella.
+> Es importante mencionar que al referirte a la rama, siempre te mueves al último commit en ella.
 
 ### 1.2.Crea otras ramas
 
@@ -51,11 +51,11 @@
 
         git branch desarrollo
 
-* Si verificamos nuestras ramas con `git branch`, deberiamos obtener algo así:
+* Si verificamos nuestras ramas con `git branch`, deberíamos obtener algo así:
 
 ![ramas](images/ramas.png)
 
-### 1.3.Muevete entre ramas
+### 1.3.Muévete entre ramas
 
 * Las ramas nos permiten movernos entre dimensiones diferentes, cada rama es independiente de la otra hasta que se fusionan.
 * Para movernos entre ramas, utilizamos el mismo comando que el para movernos entre commits, con la diferencia que utilizamos el nombre de la rama y no el id de commit, como se muestra a continuación:
@@ -97,7 +97,7 @@
 
 ![fusion](images/merge_desarrollo.png)
 
-* La fusión nos indica que se modificaron 7 lineas, 6 se agregaron y 1 se elimino.
+* La fusión nos indica que se modificaron 7 líneas, 6 se agregaron y 1 se eliminó.
 * Verifica el estado de los commits en ambas ramas y te darás cuenta que ahora ambas ramas tienen los mismos commits, ya que fusionaste.
 
 ![images](images/verificar_fusion.png)

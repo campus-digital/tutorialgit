@@ -4,18 +4,18 @@
 
 ### 1.1.Crear cuenta en github.
 
-* Ingresa a la pagina de github ([https://github.com](https://github.com/)).
+* Ingresa a la página de github ([https://github.com](https://github.com/)).
 * Ingresa tus datos en el formulario de la web para registrarte, este se muestra en la siguiente imagen:
 
 ![registro](images/registro.png)
 
 * Envía los datos del formulario que completaste.
-* Te llegara un email a tu cuenta de correo para confirmar el registro, confírmalo!!
+* Te llegará un email a tu cuenta de correo para confirmar el registro, confírmalo!!
 * Felicidades, ya estas registrado en github.
 
 ### 1.2.Crear un repositorio.
 
-* Ya que estas registrado en github, puedes crear repositorios, para hacer esto lo primero que debes hacer es ingresar a github con tu cuenta. Esto lo puedes hacer en la siguiente dirección [https://github.com/login](https://github.com/login).
+* Una vez registrado en github, puedes crear repositorios, para hacer esto lo primero que debes hacer es ingresar a github con tu cuenta. Esto lo puedes hacer en la siguiente dirección [https://github.com/login](https://github.com/login).
 
 !["login"](images/login_github.png)
 
@@ -31,11 +31,11 @@
 
 !["nuevo repo"](images/crear_repo_mitest.png)
 
-* Por ultimo le damos click al botón crear y listo.
+* Por último le damos click al botón crear y listo.
 
 ### 1.3.Clonar repositorio en equipo local.
 
-* Ya que creaste el repositorio, lo siguiente es clonarlo en tu equipo local.
+* Una vez creado el repositorio, lo siguiente es clonarlo en tu equipo.
 * Para hacer esto copiamos la dirección o URL de nuestro repositorio en github, esta dirección la obtienes inmediatamente después de crear el repositorio, tal como lo indica la imagen siguiente:
 
 !["creada"](images/datos_repo.png)
@@ -48,7 +48,7 @@
 
         git clone https://github.com/campus-digital/mitest.git
 
-> La dirección que sale en esta imagen hace referencia a la cuenta de campus digital, esta sera diferente a la tuya, ya que la cuenta tuya es diferente. Por ende, no te preocupes si la URL que clonas no es la misma.
+> La dirección que sale en esta imagen hace referencia a la cuenta de campus digital, esta será diferente a la tuya, ya que la cuenta tuya es diferente. Por ende, no te preocupes si la URL que clonas no es la misma.
 
 * Al terminar el proceso ya tenemos el repositorio clonado en nuestro equipo, este lo puedes verificar en la carpeta donde lo clonaste.
 
@@ -59,7 +59,7 @@
 
 ![terminal](images/terminal.png)
 
-* Ingresamos los datos de nuestra cuenta, empezando por el nombre como se indica en el siguiente ejemplo (recuerda que son tus datos):
+* Ingresamos los datos de nuestra cuenta, empezando por el nombre como se indica en el siguente ejemplo (recuerda que son tus datos):
 
         git config --global user.name "Juan Galleguillos"
 
@@ -67,7 +67,7 @@
 
         git config --global user.email "jgalleguillos@gmail.com"
 
-* Podemos utilizar los comandos sin el ultimo parametro para visualizar los valores ingresados.
+* Podemos utilizar los comandos sin el último parámetro para visualizar los valores ingresados.
 
         git config --global user.name
         git config --global user.email
@@ -86,7 +86,7 @@
 
 * Como muestra la imagen anterior, obtenemos:
   - La rama en la cual nos encontramos (master por defecto).
-  - Si existen cambios en el repositorio, se visualizaran en diferentes colores, ahora como no tenemos cambios no se aprecian.
+  - Si existen cambios en el repositorio, se visualizarán en diferentes colores, ahora como no tenemos cambios no se aprecian.
   - En este caso falta un commit inicial, el cual siempre es necesario al crear un repositorio.
 
 ### 2.2.Confirmación inicial
@@ -95,7 +95,7 @@
 
         vim programa.py
 
-> En nuestro caso sera un programa en python el cual puede ser escrito con cualquier editor de texto, sin embargo, si no conoces este lenguaje, puedes crear un archivo de texto.
+> En nuestro caso será un programa en python el cual puede ser escrito con cualquier editor de texto, sin embargo, si no conoces este lenguaje, puedes crear un archivo de texto.
 
 * Creamos un programa básico al ingresarle el siguiente código (área de trabajo):
 
@@ -116,11 +116,11 @@
 
 > Como indicamos enteriormente, git reconoce nuestros cambios y los visualiza con colores. En este caso nos indica que hay un archivo sin seguimiento y es necesario agregarlo al repositorio.
 
-* Posteriorrmente agregamos nuestro programa al área de preparación con el siguiente comando:
+* Posteriormente agregamos nuestro programa al área de preparación con el siguiente comando:
 
         git add programa.py
 
-> Cuando trabajes con mas archivos probablemente agregar archivos uno por uno al área de preparación sea tedioso, sin embargo, se puede utilizar `git add -A` el cual agrega todos los archivos.
+> Cuando trabajes con más archivos probablemente agregar archivos uno por uno al área de preparación sea tedioso, sin embargo, se puede utilizar `git add -A` el cual agrega todos los archivos modificados.
 
 * Podemos verificar nuestros cambios en el repositorio nuevamente con `git status`:
 
@@ -152,7 +152,7 @@
   - El autor del commit (responsable).
   - La fecha y hora de la creación.
   - El comentario del commit, el cual se recomienda que sea conciso.
-* Ahora, realiza tu otros cambios al programa y repite el proceso (la idea es que realices varios commit, al menos 3, para ello escribe otras lineas o comentarios).
+* Ahora, realiza tu otros cambios al programa y repite el proceso (la idea es que realices varios commit, al menos 3, para ello escribe otras líneas o comentarios).
 * Si verificamos los commits del repositorio nuevamente, deberíamos tener mas de uno, algo similar a lo siguiente:
 
 ![lista log](images/git_lista_log.png)
@@ -163,12 +163,12 @@
 
 ![oneline](images/git_log_oneline.png)
 
-* Tu hazlo como mas te acomode, puedes visualizar los logs con mas opciones, esto lo puedes ver en la documentación [oficial](https://git-scm.com/docs/pretty-formats).
+* Tú hazlo como mas te acomode, puedes visualizar los logs con mas opciones, esto lo puedes ver en la documentación [oficial](https://git-scm.com/docs/pretty-formats).
 
 ### 2.4.Subir cambios a un repositorio remoto
 
-* Ya conoces los comandos básicos de git para trabajar localmente, sin embargo, para interactuar con un repositorio remoto es necesario conocer algunos mas.
-* Para subir tus cambios locales a un repositorio utiliza el comando:
+* Ya conoces los comandos básicos de git para trabajar localmente, sin embargo, para interactuar con un repositorio remoto es necesario conocer algunos más.
+* Para subir tus cambios locales a un repositorio remoto utiliza el comando:
 
         git push origin master
 
