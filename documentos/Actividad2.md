@@ -1,133 +1,132 @@
 ![banner](images/header.png)
 
-## Actividad 1: El objetivo es utilizar comandos mas avanzados de git.
+## Actividad 2: El objetivo es utilizar comandos avanzados de git.
 
-### 1.1.Clonar repositorio en equipo local.
+### 2.1.Clona repositorio en equipo local.
 
-* Clonamos un repositorio creado con anterioridad.
-* Para hacer esto copiamos la dirección o URL del repositorio desde github, esta dirección la obtienes cuando buscar un repositorio.
+* Clona el repositorio que creaste con anterioridad (Actividad 1).
+* Para hacer esto copia la dirección o URL del repositorio desde github, esta dirección la obtienes cuando buscas un repositorio.
 
-![search](images/search_github.png)
+<center>![search](images/search_github.png)</center>
 
-* Una vez encontrado el repositorio por este u otro medio, lo clonamos. Para ello, copiamos la URL del repositorio (boton verde).
+* Una vez encontrado el repositorio copia la URL del repositorio (boton verde).
 
-![home](images/repositorio_github.png)
+<center>![home](images/repositorio_github.png)</center>
 
-* Nos saldra la URL a copiar, la cual copiamos:
+<center>![URL](images/clonar.png)</center>
 
-![URL](images/clonar.png)
-
-* A continuación abrimos la terminal o consola de comandos (ctrl+t).
+* A continuación abre la terminal o consola de comandos (ctrl+t).
 
 !["consola"](images/terminal.png)
 
-* En nuestro directorio personal clonamos nuestro repositorio con el comando `git clone`, como lo indica la imagen siguiente:
+* Utiliza el comando `git clone`, como se indica a continuación:
 
-        git clone https://github.com/campus-digital/mitest.git
+        git clone <mi repositorio>
 
-> La URL o dirección que sale en esta imagen es un ejemplo, esta será diferente segun el repositorio que quieras clonar. Por ende, no te preocupes si la URL que clonas no es la misma.
+> La URL o dirección que sale en esta imagen es un ejemplo, esta será diferente segun el repositorio que quieras clonar.
 
-* Al terminar el proceso ya tenemos el repositorio clonado en nuestro equipo, este lo puedes verificar en la carpeta donde lo clonaste, ya que la clonación te crea una carpeta.
+* Verifica el estado de tu repositorio clonado utilizando el comando `git status`.
 
-* Si ingresas a la carpeta y ejecutas `git status`, te deberia entregar la información correspondiente. Desde el momento en que te reconoce el comando, te indica que es un repositorio git.
+### 2.2.Muévete entre commits
 
-### 1.2.Muevete entre commits
-
-* Comencemos por abrir la terminal (ctrl+t) e ingresar a nuestro repositorio.
-
-![terminal](images/terminal.png)
+* Una vez clonado tu repositorio, podrás visualizar los cambios que se han realizado a través del comando `git log --pretty=oneline`.
 
 ![lista log](images/git_lista_log.png)
 
-* Para movernos entre commits lo podemos hacer en base a su codigo identificador.
-* Para hacer esto, es necesario utilizar el siguiente comando:
+* Puedes moverte entre commit utilizando el siguiente comando:
 
         git checkout <idcommit>
 
-* Donde "***idcommit***" es el código identificador del commit, el cual es el codigo sha-1 que nos muestra `git log`.
+* Donde "***idcommit***" es el código identificador del commit, el cual es el código sha-1 que nos muestra `git log`.
 
->Se puede utilizar una version resumida del codigo identificador, la cual pueden ser los primeros 6 caracteres del codigo identificador completo.
+>Puedes utilizar una versión resumida del código identificador, utilizando los primeros 7 caracteres del código.
 
-* Ahora, muevete a alguno de los commits que tengas en tu repo, que no sea el commit en el que te encuentras, la siguiente imagen ilustra un ejemplo:
+* Verifica el funcionamiento de este comando cambiándote a una versión anterior de tu proyecto.
 
-![checkout commit](images/checkout_commit.png)
+>Podrás notar que al cambiar de versión, los archivos de tu repositorio local también cambian.
 
-* Finalmente vuelve a tu último commit, lo puedes realizar con:
+* Vuelve a la última versión de tu proyecto usando el comando `git checkout master`
 
-        git checkout master
-
-* En el caso anterior utilizamos el nombre de la rama, por otro lado, si es que conoces el id (sha-1) de tu último commit, también lo puedes realizar con:
-
-        git checkout <idcommit>
-
-> Es importante mencionar que al referirte a la rama, siempre te mueves al último commit en ella.
-
-### 1.3.Crea otras ramas
+### 2.3.Crea otras ramas
 
 * Para ver las ramas que tienes y en la que te encuentras actualmente, utiliza el comando:
 
         git branch
 
-* El comando anterior nos muestra una lista con las ramas existentes y con un asterisco la rama actual (deberíamos tener solo master).
+* El comando anterior te muestra una lista con las ramas existentes y con un asterisco la rama actual (deberías tener solo master).
 
         * master
 
-* Puedes crear otras ramas desde una rama inicial, la cual siempre es master, con el comando:
+* Puedes crear otras ramas desde una rama inicial, la cual siempre es *master*, con el comando:
 
-        git branch <nombre>
+        git branch <nombre_nueva_rama>
 
-* En nuestro caso crearemos la rama "***desarrollo***", lo cual lo realizamos de la siguiente manera:
+* Crea la rama "***desarrollo***" de la siguiente manera:
 
         git branch desarrollo
 
-* Si verificamos nuestras ramas con `git branch`, deberíamos obtener algo así:
+* Si verificas tus ramas con `git branch`, deberías obtener lo siguiente:
 
 ![ramas](images/ramas.png)
 
-### 1.4.Muévete entre ramas
+### 2.4.Muévete entre ramas
 
-* Las ramas nos permiten movernos entre dimensiones diferentes, cada rama es independiente de la otra hasta que se fusionan.
-* Para movernos entre ramas, utilizamos el mismo comando que el para movernos entre commits, con la diferencia que utilizamos el nombre de la rama y no el id de commit, como se muestra a continuación:
+>Las ramas te permiten mover entre diferentes espacios de trabajo. Cada rama es independiente de la otra hasta que se mezclen.
+
+* Para moverte entre ramas utiliza el mismo comando que utilizas para moverte entre commits, con la diferencia que utilizas el nombre de la rama y no el id del commit, como se muestra a continuación:
 
         git checkout <nombre_rama>
 
-* Movámonos a la rama "desarrollo" que creamos:
+* Muévete a la rama "desarrollo" que creaste:
 
         git checkout desarrollo
 
 ![checkout rama](images/checkout_rama.png)
 
-* Podemos verificar la rama en la que estamos con:
+* Puedes verificar la rama actual con el siguiente comando:
 
 ![ramas](images/ramas2.png)
 
-* Realiza nuevas modificaciones al "***programa.py***" en esta rama y realiza los commits correspondientes (al menos 2), deberías tener algo así:
+#### Comprueba la independencia que existe en cada una de las ramas, a través de los siguientes pasos.
+
+* Realiza modificaciones al "***programa.py***" en esta rama (desarrollo) y realiza los commits correspondientes. Obtendrás el siguiente resultado:
 
         git log --pretty=online
        
 ![log desarrollo](images/log_desarrollo.png)
 
-* Cámbiate a la rama master y verifica que no tiene los commits que creaste en la rama desarrollo:
+* Cámbiate a la rama `master` y verifica que no tiene los commits que creaste en la rama `desarrollo`:
 
 ![log ambas](images/git_logs_ambas.png)
 
-* Como te diste cuenta puedes tomar caminos diferentes segun la rama en la que te encuentres. Puedes trabajar en paraleo sin que los cambios de una rama afecten a otra.
+>Como habrás notado, puedes tomar caminos diferentes según la rama en la que te encuentres, trabajando en paralelo sin que los cambios de una rama afecten a otra.
 
-### 1.5.Fusiona las ramas.
+### 2.5.Fusiona las ramas.
 
-* Con las ramas, no tan solo puedes crear caminos diferentes, sino que tambien puedes unir caminos.
-* Para unir ramas o mover los commits desde una rama hacia otra tienes que fusionar las ramas.
-* La fusión funciona ***desde otra rama hacia la actual***, es decir, si nos ubicamos en master, podemos fusionar desde
-***desarrollo*** hacia ***master***.
-* Esto lo realizaremos de la siguiente manera (recuerda moverte a master):
+>Con las ramas, no solo puedes crear caminos diferentes, sino que tambien puedes unirlos.
+Para unir ramas o mover los commits desde una rama hacia otra tienes que fusionar las ramas.
 
+* La fusión funciona ***desde otra rama hacia la actual***, es decir, si nos ubicamos en `master`, podemos fusionar desde `desarrollo` hacia `master`.
+
+* Esto lo realizas de la siguiente manera (recuerda estar en master):
+
+        git checkout master
         git branch
         git merge desarrollo
 
 ![fusion](images/merge_desarrollo.png)
 
-* La fusión nos indica que se modificaron 7 líneas, 6 se agregaron y 1 se eliminó.
-* Verifica el estado de los commits en ambas ramas y te darás cuenta que ahora ambas ramas tienen los mismos commits, ya que fusionaste.
+>La fusión te indica que líneas se modificaron.
+
+* Verifica el estado de los commits en ambas ramas y te darás cuenta que ahora ambas tienen los mismos commits, ya que fusionaste.
 
 ![images](images/verificar_fusion.png)
 
+
+### 2.6.Elimina las ramas.
+
+* Elimina la rama `desarrollo` creada en los pasos anteriores, utilizando el siguiente comando.
+
+        git branch -D desarrollo
+     
+>Recuerda que también es posible publicar tus ramas en el servidor remoto para que pueda ser visualizada por los demás miembros del equipo. Esto se utiliza en ocasiones donde existen diferentes ambientes de trabajo, como un entorno de desarrollo, pruebas y producción.
