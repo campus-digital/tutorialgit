@@ -1,6 +1,4 @@
-## Actividad
-
-Repositorio Campus Digital en Sitio GitHub: <https://github.com/campus-digital/>
+## Comandos Básicos de git
 
 * Abrir Terminal y verificar la instalación.
 	
@@ -10,52 +8,44 @@ Repositorio Campus Digital en Sitio GitHub: <https://github.com/campus-digital/>
 
 * Clonar repositorio creado en sitio GitHub
 
-	`$ git clone https://github.com/campus-digital/tutorialgit.git`
+	`$ git clone https://github.com/nombre_cuenta/nombre_repositorio.git`
 	
-* Verificar el estatus del repositorio (*Ir a carpeta donde se encuentre repositorio clonado*)
+* Verificar el estado del repositorio (*Ir a carpeta donde se encuentre repositorio clonado*)
 	
 	`$ git status`
 	
-* Seleccionar una rama (branch).
+* Ver ramas (branch)
 
-	`$ git checkout master`
+	`$ git branch`
+
+* Seleccionar una rama.
+
+	`$ git checkout nombre_rama`
 	
 * Comprobar e incorporar cambios de repositorio remoto en actual rama.
 
-	`git pull origin master`
-
-* Añadir archivo de ejemplo al repositorio
-
-	`$ echo "Incluímos un nuevo archivo al repositorio" >> archivo.txt`
-
-* Verificar el estado de los cambios
-
-	`$ git status`
+	`$ git pull origin nombre_rama`
 	
 * Añadir cambios al área de preparación (`Staging Area`).
 
-	`$ git add archivo.txt`
+	`$ git add nombre_archivo.txt`
 	
 * Realizar `commit` a los archivos de Staging Area.
 
-	`$ git commit -m "Se añade nuevo archivo al repositorio"`
+	`$ git commit -m "comentario de la confirmación en repositorio"`
 	
+* Mezclar cambios desde una rama hacia la rama actual.
+
+	`$ git merge nombre_rama`
+
+* Eliminar rama local
+
+	`$ git branch -D nombre_rama`
+
+* Eliminar rama remota
+
+	`$ git push origin nombre_rama --delete`
+
 * Subir cambios a rama `master` del repositorio remoto.
 
-	`$ git push origin master`
-
-
-## Comandos útiles
-
-* Setear la url del repositorio
-
-	`git remote set-url origin git://new.url.here`
-	`git remote set-url origin https://github.com/campus-digital/nuevo-repositorio.git`
-		
-* Añadir otro repositorio.	
-
-	`git remote add [nombre] [url]`
-
-	`git remote add origin https://github.com/campus-digital/nombre-repositorio.git`
-
-
+	`$ git push origin nombre_rama`
