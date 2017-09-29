@@ -12,7 +12,7 @@ def suma(a,b):
   Funcion resta
 '''
 def resta(a,b):
-    return 0
+    return (a-b)
 
 
 '''
