@@ -1,6 +1,6 @@
 ![banner](images/header.png)
 
-## Actividad 1: El objetivo es utilizar comandos mas avanzados de git que sirven para el trabajo colaborativo.
+## Actividad 1: El objetivo es utilizar comandos mas avanzados de git.
 
 ### 1.1.Clonar repositorio en equipo local.
 
