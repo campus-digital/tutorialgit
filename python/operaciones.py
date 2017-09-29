@@ -9,7 +9,7 @@ def suma(a,b):
 '''
 Se 
 generan
-comentarios
+comentarios resta
 en
 las 
 funciones
