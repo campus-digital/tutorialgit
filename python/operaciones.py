@@ -12,6 +12,14 @@ def suma(a,b):
   Funcion resta
 '''
 def resta(a,b):
+    '''
+       hjsdgfhjs
+       kjsghdfhdsf
+       hsgdfhjgds
+       kjshdfjkhsdf
+       kjsdhfjkhsdf
+       ksjdhfkjhdsf
+    '''
     return (a-b)
 
 
