@@ -42,7 +42,7 @@ def resta(a,b):
   Funcion multiplicación
 '''
 def multiplicacion(a,b):
-    return 0
+    return (a*b)
 
 
 '''
