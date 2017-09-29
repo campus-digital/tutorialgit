@@ -6,7 +6,22 @@
 '''
 def suma(a,b):
     return a+b
-
+'''
+Se 
+generan
+comentarios
+en
+las 
+funciones
+Suma
+y 
+Resta
+utilizando
+la 
+misma
+rama
+desarrollo
+'''
 
 '''
   Funcion resta
