@@ -6,35 +6,11 @@
 '''
 def suma(a,b):
     return a+b
-'''
-Se 
-generan
-comentarios mezclados
-en
-las 
-funciones
-Suma
-y 
-Resta
-utilizando
-la 
-misma
-rama
-desarrollo
-'''
 
 '''
   Funcion resta
 '''
 def resta(a,b):
-    '''
-       hjsdgfhjs
-       kjsghdfhdsf
-       hsgdfhjgds
-       kjshdfjkhsdf
-       kjsdhfjkhsdf
-       ksjdhfkjhdsf
-    '''
     return (a-b)
 
 
@@ -94,6 +70,27 @@ def tangente(a):
 
 
 '''
+  Funcion valor absoluto
+'''
+def valabs(a):
+    return 0
+
+
+'''
+  Funcion raiz cuadrada
+'''
+def raizcuadrada(a):
+    return 0
+
+
+'''
+  Funcion redondear entero
+'''
+def redondear(a):
+    return 0
+
+
+'''
   Funcion principal
 '''
 def main():
@@ -108,6 +105,9 @@ def main():
     print(' 8) Seno')
     print(' 9) Coseno')
     print('10) Tangente')
+    print('11) Absoluto')
+    print('12) Raiz Cuadrada')
+    print('13) Redondear')
     try:
         menu = raw_input('Escoge una opción: ')
         opcion = int(menu)
@@ -193,6 +193,27 @@ def main():
             print('Tangente: %d' % tangente(a))
         except ValueError:
             print('Error en la tangente, el valor ingresado no es numerico')
+    elif(opcion == 11):
+        try:
+            numa = raw_input('Número A: ')
+            a = int(numa)
+            print('Valor Absoluto: %d' % valabs(a))
+        except ValueError:
+            print('Error en el valor absoluto, el valor ingresado no es numerico')
+    elif(opcion == 12):
+        try:
+            numa = raw_input('Número A: ')
+            a = int(numa)
+            print('Raiz Cuadrada: %d' % raizcuadrada(a))
+        except ValueError:
+            print('Error en la raiz cuadrada, el valor ingresado no es numerico')
+    elif(opcion == 13):
+        try:
+            numa = raw_input('Número A: ')
+            a = float(numa)
+            print('Redondear: %d' % redondear(a))
+        except ValueError:
+            print('Error en redondear, el valor ingresado no es numerico')
 
 
 if __name__ == '__main__':
