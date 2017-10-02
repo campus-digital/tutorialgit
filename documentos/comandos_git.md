@@ -14,7 +14,7 @@
 	
 	`$ git status`
 	
-* Ver ramas (branch)
+* Observar ramas locales
 
 	`$ git branch`
 
@@ -22,7 +22,7 @@
 
 	`$ git checkout nombre_rama`
 	
-* Comprobar e incorporar cambios de repositorio remoto en actual rama.
+* Comprobar e incorporar cambios de repositorio remoto en la rama actual.
 
 	`$ git pull origin nombre_rama`
 	
@@ -30,7 +30,7 @@
 
 	`$ git add nombre_archivo.txt`
 	
-* Realizar `commit` a los archivos de Staging Area.
+* Confirmar cambios a los archivos del área de preparación.
 
 	`$ git commit -m "comentario de la confirmación en repositorio"`
 	
@@ -46,6 +46,6 @@
 
 	`$ git push origin nombre_rama --delete`
 
-* Subir cambios a rama `master` del repositorio remoto.
+* Subir cambios a rama en repositorio remoto.
 
 	`$ git push origin nombre_rama`
